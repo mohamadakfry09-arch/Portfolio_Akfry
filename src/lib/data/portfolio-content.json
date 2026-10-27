@@ -1,0 +1,597 @@
+{
+  "profile": {
+    "name": "Mohamad Akfry Hermawan",
+    "nickname": "Akfry",
+    "headline": {
+      "id": "Front-End Specialist & Full Stack Web Developer",
+      "en": "Front-End Specialist & Full Stack Web Developer"
+    },
+    "education": "D3 Manajemen Informatika, STMIK IKMI Cirebon • Alumni SMK Pertiwi Kuningan (RPL)",
+    "location": "Cirebon / Kuningan, Jawa Barat, Indonesia",
+    "locationUrl": "https://maps.google.com/?q=Cirebon,West+Java,Indonesia",
+    "email": "mohamadakfry09@gmail.com",
+    "phone": "+62 831-6760-2196",
+    "resumeUrl": "#",
+    "brand": {
+      "name": "Akarayasa Desain",
+      "tagline": "Web Development, UI/UX Engineering & Creative Design Services",
+      "services": [
+        "Pengembangan Web",
+        "UI/UX Design",
+        "Peluang Kerja & Konsultasi"
+      ]
+    },
+    "about": {
+      "id": "Mengawali ketertarikan pemrograman sejak bangku SMP, saya menempuh pendidikan di SMK Pertiwi Kuningan (Rekayasa Perangkat Lunak) dan melanjutkan studi D3 Manajemen Informatika di STMIK IKMI Cirebon. Fokus keahlian saya berakar pada Front-End UI Engineering presisi tinggi menggunakan React.js, TypeScript, dan Tailwind CSS, serta Full-Stack development berbasis Laravel. Selama magang di Disdukcapil Kab. Cirebon, saya mengembangkan dan mengoptimalkan antarmuka portal publik SINTREN dan KATON SINTREN dengan mengintegrasikan identitas lokal motif batik Mega Mendung.",
+      "en": "My passion for coding started back in junior high school, leading me through vocational studies in Software Engineering at SMK Pertiwi Kuningan and currently pursuing an Associate Degree (D3) in Informatics Management at STMIK IKMI Cirebon. I specialize in high-precision Front-End UI engineering with React.js, TypeScript, and Tailwind CSS, coupled with robust full-stack architecture using Laravel. During my internship at Disdukcapil Cirebon Regency, I engineered and refined citizen portal interfaces for SINTREN and KATON SINTREN, infusing modern UI with regional Mega Mendung batik motifs."
+    },
+    "stats": {
+      "yearsExperience": 2,
+      "completedProjects": 12
+    }
+  },
+  "socialLinks": [
+    {
+      "platform": "GitHub",
+      "label": "mohamadakfry09-arch",
+      "url": "https://github.com/mohamadakfry09-arch",
+      "iconName": "github"
+    },
+    {
+      "platform": "LinkedIn",
+      "label": "Mohamad Akfry Hermawan",
+      "url": "https://linkedin.com/in/mohamadakfry",
+      "iconName": "linkedin"
+    },
+    {
+      "platform": "Instagram",
+      "label": "@akarayasadesain",
+      "url": "https://instagram.com/akarayasadesain",
+      "iconName": "instagram"
+    }
+  ],
+  "techStack": [
+    {
+      "name": "TypeScript",
+      "icon": "typescript",
+      "url": "https://www.typescriptlang.org/",
+      "category": "Languages",
+      "popular": true
+    },
+    {
+      "name": "JavaScript",
+      "icon": "javascript",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "category": "Languages",
+      "popular": true
+    },
+    {
+      "name": "PHP",
+      "icon": "php",
+      "url": "https://www.php.net/",
+      "category": "Languages",
+      "popular": true
+    },
+    {
+      "name": "HTML5",
+      "icon": "html5",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+      "category": "Languages"
+    },
+    {
+      "name": "CSS3",
+      "icon": "css3",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "category": "Languages"
+    },
+    {
+      "name": "Python",
+      "icon": "python",
+      "url": "https://www.python.org/",
+      "category": "Languages"
+    },
+    {
+      "name": "R",
+      "icon": "r",
+      "url": "https://www.r-project.org/",
+      "category": "Languages"
+    },
+    {
+      "name": "Java",
+      "icon": "java",
+      "url": "https://www.java.com/",
+      "category": "Languages"
+    },
+    {
+      "name": "SQL",
+      "icon": "sql",
+      "url": "https://en.wikipedia.org/wiki/SQL",
+      "category": "Languages"
+    },
+    {
+      "name": "React.js",
+      "icon": "react",
+      "url": "https://react.dev/",
+      "category": "Frontend",
+      "popular": true
+    },
+    {
+      "name": "Svelte / SvelteKit",
+      "icon": "svelte",
+      "url": "https://svelte.dev/",
+      "category": "Frontend",
+      "popular": true
+    },
+    {
+      "name": "Tailwind CSS",
+      "icon": "tailwind",
+      "url": "https://tailwindcss.com/",
+      "category": "Frontend",
+      "popular": true
+    },
+    {
+      "name": "CoreUI",
+      "icon": "coreui",
+      "url": "https://coreui.io/",
+      "category": "Frontend"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "bootstrap",
+      "url": "https://getbootstrap.com/",
+      "category": "Frontend"
+    },
+    {
+      "name": "Vite",
+      "icon": "vite",
+      "url": "https://vite.dev/",
+      "category": "Frontend",
+      "popular": true
+    },
+    {
+      "name": "Three.js",
+      "icon": "threejs",
+      "url": "https://threejs.org/",
+      "category": "Frontend"
+    },
+    {
+      "name": "MediaPipe",
+      "icon": "mediapipe",
+      "url": "https://developers.google.com/mediapipe",
+      "category": "Frontend"
+    },
+    {
+      "name": "Laravel 12",
+      "icon": "laravel",
+      "url": "https://laravel.com/",
+      "category": "Backend & Database",
+      "popular": true
+    },
+    {
+      "name": "Node.js",
+      "icon": "nodejs",
+      "url": "https://nodejs.org/",
+      "category": "Backend & Database",
+      "popular": true
+    },
+    {
+      "name": "MySQL",
+      "icon": "mysql",
+      "url": "https://www.mysql.com/",
+      "category": "Backend & Database",
+      "popular": true
+    },
+    {
+      "name": "Oracle APEX",
+      "icon": "oracle",
+      "url": "https://apex.oracle.com/",
+      "category": "Backend & Database"
+    },
+    {
+      "name": "VS Code",
+      "icon": "vscode",
+      "url": "https://code.visualstudio.com/",
+      "category": "Tools & Workflow",
+      "popular": true
+    },
+    {
+      "name": "Git",
+      "icon": "git",
+      "url": "https://git-scm.com/",
+      "category": "Tools & Workflow",
+      "popular": true
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/",
+      "category": "Tools & Workflow",
+      "popular": true
+    },
+    {
+      "name": "Laragon / XAMPP",
+      "icon": "server",
+      "url": "https://laragon.org/",
+      "category": "Tools & Workflow"
+    },
+    {
+      "name": "Figma",
+      "icon": "figma",
+      "url": "https://www.figma.com/",
+      "category": "Tools & Workflow",
+      "popular": true
+    },
+    {
+      "name": "DBeaver",
+      "icon": "dbeaver",
+      "url": "https://dbeaver.io/",
+      "category": "Tools & Workflow"
+    },
+    {
+      "name": "Docker / WSL2",
+      "icon": "docker",
+      "url": "https://www.docker.com/",
+      "category": "Tools & Workflow"
+    }
+  ],
+  "featuredProjects": [
+    {
+      "id": "proj-1793067837713",
+      "title": "MARDI (MANAGEMENT RAPAT DINAS)",
+      "slug": "https://sintren.cirebonkab.go.id/mardi/",
+      "summary": {
+        "id": "Ringkasan singkat proyek baru.",
+        "en": "Brief summary of the new project."
+      },
+      "description": {
+        "id": "Deskripsi lengkap fitur dan implementasi teknologi.",
+        "en": "Full description of features and technology implementation."
+      },
+      "thumbnail": "/projects/default.webp",
+      "tags": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "demoUrl": "https://sintren.cirebonkab.go.id/mardi/",
+      "repoUrl": "https://github.com/mohamadakfry09-arch",
+      "featured": true
+    },
+    {
+      "id": "sintren-katon",
+      "title": "SINTREN & KATON SINTREN",
+      "slug": "sintren-katon-disdukcapil",
+      "summary": {
+        "id": "Portal layanan Administrasi Kependudukan (Adminduk) Disdukcapil Kab. Cirebon dengan sentuhan motif batik Mega Mendung.",
+        "en": "Public Civil Registry & Population Administration (Adminduk) portal for Cirebon Regency infused with iconic Mega Mendung batik motifs."
+      },
+      "description": {
+        "id": "Membangun dan mengoptimasi antarmuka digital pelayanan administrasi kependudukan masyarakat Cirebon. Memanfaatkan React.js dan TypeScript untuk performa cepat dan keandalan input formulir online.",
+        "en": "Engineered and optimized digital public service interfaces for civil registry in Cirebon Regency using React.js and TypeScript for rapid responsiveness and high-volume data reliability."
+      },
+      "thumbnail": "/projects/sintren.webp",
+      "tags": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "CoreUI",
+        "Vite"
+      ],
+      "demoUrl": "https://disdukcapil.cirebonkab.go.id",
+      "repoUrl": "https://github.com/mohamadakfry09-arch",
+      "featured": true,
+      "accentColor": "#0284c7"
+    },
+    {
+      "id": "web-atk",
+      "title": "Web-ATK (Enterprise POS & Inventory)",
+      "slug": "web-atk-point-of-sale",
+      "summary": {
+        "id": "Point of Sale & inventory toko ATK enterprise dilengkapi pembayaran QRIS otomatis Tripay dan barcode scanner.",
+        "en": "Enterprise Point of Sale & office supplies inventory system equipped with automated Tripay QRIS and barcode scanning."
+      },
+      "description": {
+        "id": "Solusi kasir dan manajemen stok komprehensif berbasis Laravel 12 dan React. Mendukung pencetakan struk termal, pelaporan laba rugi real-time, dan multi-cabang.",
+        "en": "Comprehensive POS and stock management solution built on Laravel 12 and React. Features thermal receipt printing, real-time analytics, and automated QRIS payments."
+      },
+      "thumbnail": "/projects/web-atk.webp",
+      "tags": [
+        "Laravel",
+        "React",
+        "Tailwind CSS",
+        "Tripay QRIS",
+        "MySQL"
+      ],
+      "demoUrl": "#",
+      "repoUrl": "https://github.com/mohamadakfry09-arch",
+      "featured": true,
+      "accentColor": "#10b981"
+    },
+    {
+      "id": "sialim",
+      "title": "SiAlim — Academic Information System",
+      "slug": "sialim-academic-system",
+      "summary": {
+        "id": "Sistem informasi akademik digital untuk manajemen data siswa/mahasiswa, presensi, dan penilaian.",
+        "en": "Digital academic information platform for student records management, attendance tracking, and grading."
+      },
+      "description": {
+        "id": "Platform portal akademik intuitif yang mempermudah interaksi dosen/guru dengan peserta didik.",
+        "en": "Intuitive academic portal facilitating seamless communication and academic workflows between educators and students."
+      },
+      "thumbnail": "/projects/sialim.webp",
+      "tags": [
+        "Laravel",
+        "Tailwind CSS",
+        "Alpine.js",
+        "MySQL"
+      ],
+      "demoUrl": "#",
+      "repoUrl": "https://github.com/mohamadakfry09-arch",
+      "featured": true,
+      "accentColor": "#6366f1"
+    },
+    {
+      "id": "solar-system-3d",
+      "title": "3D Solar System (Gesture Control)",
+      "slug": "3d-solar-system-gesture",
+      "summary": {
+        "id": "Web interaktif simulasi tata surya 3D yang dikontrol langsung menggunakan gestur tangan via kamera.",
+        "en": "Interactive 3D solar system simulation controlled directly via real-time camera hand gestures."
+      },
+      "description": {
+        "id": "Eksperimen grafis 3D mutakhir yang memadukan Three.js dengan kecerdasan buatan MediaPipe Hands untuk navigasi tanpa sentuh.",
+        "en": "Cutting-edge WebGL experiment marrying Three.js with Google MediaPipe Hands AI for touchless spatial gesture navigation."
+      },
+      "thumbnail": "/projects/solarsystem.webp",
+      "tags": [
+        "Three.js",
+        "MediaPipe Hands",
+        "JavaScript",
+        "WebGL"
+      ],
+      "demoUrl": "#",
+      "repoUrl": "https://github.com/mohamadakfry09-arch",
+      "featured": true,
+      "accentColor": "#f59e0b"
+    },
+    {
+      "id": "heros-quest",
+      "title": "Hero's Quest: Saving the Princess",
+      "slug": "heros-quest-2d-game",
+      "summary": {
+        "id": "Game petualangan 2D klasik berkonsep penyelamatan putri dengan mekanika puzzle dan rintangan dinamis.",
+        "en": "Classic 2D adventure game featuring princess rescue quests with puzzle mechanics and dynamic obstacles."
+      },
+      "description": {
+        "id": "Proyek game engine edukatif berbasis Java Greenfoot dengan sistem deteksi benturan dan sprite animasi terstruktur.",
+        "en": "Educational game engine implementation built in Java Greenfoot with custom collision detection and structured animation state machines."
+      },
+      "thumbnail": "/projects/herosquest.webp",
+      "tags": [
+        "Java",
+        "Greenfoot",
+        "Game Development",
+        "OOP"
+      ],
+      "demoUrl": "#",
+      "repoUrl": "https://github.com/mohamadakfry09-arch",
+      "featured": true,
+      "accentColor": "#ec4899"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "disdukcapil",
+      "organization": "Disdukcapil Kab. Cirebon",
+      "role": {
+        "id": "Front-End Developer Intern (IT SIAK)",
+        "en": "Front-End Developer Intern (IT SIAK)"
+      },
+      "period": {
+        "id": "2026 — Sekarang",
+        "en": "2024 — Present"
+      },
+      "description": {
+        "id": "Membangun dan mengoptimalkan antarmuka aplikasi SINTREN dan KATON SINTREN dengan React.js dan TypeScript. Mengembangkan arsitektur komponen UI yang selaras dengan identitas lokal motif Mega Mendung, mempermudah ribuan warga mengakses layanan kependudukan.",
+        "en": "Engineered and optimized interfaces for SINTREN and KATON SINTREN utilizing React.js and TypeScript. Crafted accessible component systems incorporating cultural Mega Mendung motifs, improving digital civil service delivery for thousands of citizens."
+      },
+      "techs": [
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "CoreUI",
+        "Vite",
+        "REST API"
+      ]
+    },
+    {
+      "id": "stkip",
+      "organization": "STKIP Muhammadiyah Kuningan",
+      "role": {
+        "id": "IT & Technical Support Intern",
+        "en": "IT & Technical Support Intern"
+      },
+      "period": {
+        "id": "2023",
+        "en": "2023"
+      },
+      "description": {
+        "id": "Memberikan dukungan teknis infrastruktur jaringan kampus, pemeliharaan lab komputer, serta asistensi sistem informasi manajemen operasional akademik.",
+        "en": "Delivered technical support for campus network infrastructure, laboratory hardware maintenance, and assisted in operating academic information management systems."
+      },
+      "techs": [
+        "Computer Networking",
+        "Technical Support",
+        "Hardware Troubleshooting",
+        "System Maintenance"
+      ]
+    }
+  ],
+  "journeyEntries": [
+    {
+      "year": "2019",
+      "phase": {
+        "id": "Awal Ketertarikan",
+        "en": "The Spark"
+      },
+      "title": {
+        "id": "MTS Pertiwi Kuningan",
+        "en": "Junior High — Discovering Coding"
+      },
+      "bullets": {
+        "id": [
+          "Mulai belajar dasar pemrograman web (HTML, CSS, dasar logika algoritma).",
+          "Bercita-cita menjadi Front-End Programmer profesional."
+        ],
+        "en": [
+          "Began exploring fundamentals of web technologies (HTML, CSS, algorithm logic).",
+          "Set ambition to become a professional Front-End UI Engineer."
+        ]
+      }
+    },
+    {
+      "year": "2021",
+      "phase": {
+        "id": "Pendidikan Vokasi",
+        "en": "Vocational High"
+      },
+      "title": {
+        "id": "SMK Pertiwi Kuningan (RPL)",
+        "en": "SMK Pertiwi Kuningan (Software Engineering)"
+      },
+      "bullets": {
+        "id": [
+          "Mendalami Rekayasa Perangkat Lunak, database SQL, dan Object-Oriented Programming.",
+          "Mengembangkan berbagai aplikasi web prototype dan game logika Java."
+        ],
+        "en": [
+          "Mastered Software Engineering paradigms, relational SQL databases, and OOP.",
+          "Created functional web prototypes and interactive Java logic applications."
+        ]
+      }
+    },
+    {
+      "year": "2023",
+      "phase": {
+        "id": "Kompetisi & Eksplorasi",
+        "en": "Competitions & Growth"
+      },
+      "title": {
+        "id": "Kompetisi IT Tingkat SMK & Nasional",
+        "en": "IT Competitions & College Journey"
+      },
+      "bullets": {
+        "id": [
+          "Mengikuti Web Development Competition di UNIKOM Bandung.",
+          "Mengikuti UI & Software Testing Competition di Telkom University Purwokerto.",
+          "Memulai studi D3 Manajemen Informatika di STMIK IKMI Cirebon."
+        ],
+        "en": [
+          "Competed in Web Development Competition at UNIKOM Bandung.",
+          "Participated in UI & Software Testing Competition at Telkom University Purwokerto.",
+          "Commenced Associate Degree (D3) in Informatics Management at STMIK IKMI Cirebon."
+        ]
+      }
+    },
+    {
+      "year": "2024–2026",
+      "phase": {
+        "id": "Enterprise & Agency",
+        "en": "Enterprise & Akarayasa"
+      },
+      "title": {
+        "id": "Magang Disdukcapil & Akarayasa Desain",
+        "en": "Disdukcapil Internship & Akarayasa Desain"
+      },
+      "bullets": {
+        "id": [
+          "Terpilih sebagai Front-End Developer Intern di Disdukcapil Kab. Cirebon (SINTREN & KATON SINTREN).",
+          "Mendirikan brand Akarayasa Desain untuk layanan web development dan UI/UX profesional."
+        ],
+        "en": [
+          "Appointed as Front-End Developer Intern at Disdukcapil Cirebon Regency (SINTREN & KATON SINTREN).",
+          "Founded Akarayasa Desain brand providing bespoke web engineering and UI/UX design."
+        ]
+      }
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert-fe-react",
+      "title": "Front-End Web Development with React & TypeScript",
+      "issuer": "Dicoding Indonesia / Kementerian Kominfo",
+      "issueDate": "2024",
+      "credentialUrl": "https://www.dicoding.com/certificates",
+      "previewFile": "#"
+    },
+    {
+      "id": "cert-fullstack-laravel",
+      "title": "Full-Stack Web Development with Laravel & MySQL",
+      "issuer": "BuildWithAngga",
+      "issueDate": "2024",
+      "credentialUrl": "https://buildwithangga.com",
+      "previewFile": "#"
+    },
+    {
+      "id": "cert-uiux-figma",
+      "title": "Professional UI/UX Design & Prototyping in Figma",
+      "issuer": "Coursera / Google Career Certificates",
+      "issueDate": "2023",
+      "credentialUrl": "https://coursera.org",
+      "previewFile": "#"
+    },
+    {
+      "id": "cert-software-testing",
+      "title": "Software Testing & Quality Assurance Fundamentals",
+      "issuer": "Telkom University Purwokerto Competition",
+      "issueDate": "2023",
+      "credentialUrl": "#",
+      "previewFile": "#"
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "post-1",
+      "title": {
+        "id": "Membangun UI Layanan Publik Responsif dengan React dan Ornamen Mega Mendung",
+        "en": "Building Accessible Public Service UI with React and Regional Mega Mendung Motifs"
+      },
+      "slug": "membangun-ui-layanan-publik-mega-mendung",
+      "excerpt": {
+        "id": "Refleksi teknis selama mendesain SINTREN Disdukcapil Kab. Cirebon: menyeimbangkan aksesibilitas warga, performa, dan identitas budaya daerah.",
+        "en": "Technical reflections during engineering SINTREN for Disdukcapil Cirebon: striking harmony between citizen accessibility, performance, and cultural heritage."
+      },
+      "publishedAt": "2025-08-15",
+      "readTime": "5 min read",
+      "cover": "/blog/mega-mendung-ui.webp",
+      "tags": [
+        "React",
+        "Accessibility",
+        "UI/UX",
+        "Design System"
+      ]
+    },
+    {
+      "id": "post-2",
+      "title": {
+        "id": "Integrasi QRIS Tripay Otomatis pada POS Toko ATK Menggunakan Laravel 12",
+        "en": "Integrating Automated Tripay QRIS in Enterprise Stationery POS with Laravel 12"
+      },
+      "slug": "integrasi-qris-tripay-pos-laravel-12",
+      "excerpt": {
+        "id": "Panduan arsitektur webhook, manajemen state transaksi idempotent, dan keamanan callback pembayaran digital.",
+        "en": "Architectural walkthrough of webhooks, idempotent transaction state management, and digital payment callback security."
+      },
+      "publishedAt": "2025-10-02",
+      "readTime": "7 min read",
+      "cover": "/blog/laravel-tripay.webp",
+      "tags": [
+        "Laravel",
+        "Payment Gateway",
+        "QRIS",
+        "Backend"
+      ]
+    }
+  ]
+}

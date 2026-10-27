@@ -1,0 +1,181 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+	:root {
+		--font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		--font-mono: 'JetBrains Mono', ui-monospace, monospace;
+		--font-caveat: 'Caveat', cursive;
+		--font-antic: 'Antic', sans-serif;
+
+		--edge: #e4e4e7;
+		--background: #ffffff;
+		--foreground: #09090b;
+		--card: #ffffff;
+		--card-foreground: #09090b;
+		--popover: #ffffff;
+		--popover-foreground: #09090b;
+		--primary: #00A792;
+		--primary-foreground: #ffffff;
+		--secondary: #f4f4f5;
+		--secondary-foreground: #18181b;
+		--muted: #f4f4f5;
+		--muted-foreground: #71717a;
+		--accent: #00A792;
+		--accent-foreground: #ffffff;
+		--destructive: #ef4444;
+		--destructive-foreground: #ffffff;
+		--border: #e4e4e7;
+		--input: #e4e4e7;
+		--ring: #00A792;
+		--radius: 0.75rem;
+		--header-height: 3.5rem;
+	}
+
+	.dark {
+		--edge: #27272a;
+		--background: #0a0a0a;
+		--foreground: #fafafa;
+		--card: #121214;
+		--card-foreground: #fafafa;
+		--popover: #121214;
+		--popover-foreground: #fafafa;
+		--primary: #06FBC2;
+		--primary-foreground: #0a0a0a;
+		--secondary: #18181b;
+		--secondary-foreground: #fafafa;
+		--muted: #18181b;
+		--muted-foreground: #a1a1aa;
+		--accent: #06FBC2;
+		--accent-foreground: #0a0a0a;
+		--destructive: #7f1d1d;
+		--destructive-foreground: #fafafa;
+		--border: #27272a;
+		--input: #27272a;
+		--ring: #06FBC2;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+	font-family: var(--font-sans);
+	background-color: var(--background);
+	color: var(--foreground);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Custom font classes */
+.font-caveat {
+	font-family: var(--font-caveat), cursive;
+}
+
+.font-antic {
+	font-family: var(--font-antic), sans-serif;
+}
+
+/* Muh Ikram Blueprint Line Effects */
+.border-edge {
+	border-color: var(--edge);
+}
+
+.divide-edge > :not(:last-child) {
+	border-color: var(--edge);
+}
+
+.screen-line-before {
+	position: relative;
+}
+
+.screen-line-before::before {
+	content: '';
+	z-index: -1;
+	background-color: var(--edge);
+	width: 200vw;
+	height: 1px;
+	position: absolute;
+	top: 0;
+	left: -100vw;
+	pointer-events: none;
+}
+
+.screen-line-after {
+	position: relative;
+}
+
+.screen-line-after::after {
+	content: '';
+	z-index: -1;
+	background-color: var(--edge);
+	width: 200vw;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: -100vw;
+	pointer-events: none;
+}
+
+/* Signature Diagonal Repeating Blueprint Spacer */
+.diagonal-spacer {
+	position: relative;
+	display: flex;
+	height: 3.25rem; /* h-13 */
+	width: 100%;
+	border-left: 1px solid var(--edge);
+	border-right: 1px solid var(--edge);
+	overflow: visible;
+}
+
+.diagonal-spacer::before {
+	content: '';
+	position: absolute;
+	left: -100vw;
+	top: 0;
+	z-index: -1;
+	height: 100%;
+	width: 200vw;
+	background-image: repeating-linear-gradient(315deg, var(--edge) 0, var(--edge) 1px, transparent 0, transparent 50%);
+	background-size: 10px 10px;
+	opacity: 0.55;
+	pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--edge);
+	border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--muted-foreground);
+}
+
+/* Glassmorphism & spotlight */
+.spotlight-glow {
+	background: radial-gradient(600px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%), rgba(0, 167, 146, 0.08), transparent 40%);
+}
+
+.dark .spotlight-glow {
+	background: radial-gradient(600px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%), rgba(6, 251, 194, 0.06), transparent 40%);
+}
+

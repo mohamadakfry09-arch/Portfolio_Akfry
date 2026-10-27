@@ -1,0 +1,49 @@
+{
+	"name": "akfry-portfolio",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"devDependencies": {
+		"@inlang/paraglide-js": "^2.18.2",
+		"@sveltejs/adapter-auto": "^8.0.0",
+		"@sveltejs/kit": "^3.0.0",
+		"@sveltejs/vite-plugin-svelte": "^7.2.0",
+		"@tailwindcss/vite": "^4.3.0",
+		"@types/node": "^26.6.5",
+		"svelte": "^5.57.1",
+		"svelte-check": "^4.6.0",
+		"tailwindcss": "^4.3.0",
+		"typescript": "^6.0.3",
+		"vite": "^8.3.0"
+	},
+	"imports": {
+		"#lib": "./src/lib/index.js",
+		"#lib/*": "./src/lib/*",
+		"$lib": "./src/lib/index.js",
+		"$lib/*": "./src/lib/*"
+	},
+	"dependencies": {
+		"@lucide/svelte": "^1.61.0",
+		"@portabletext/svelte": "^4.0.0",
+		"@sanity/client": "^8.11.0",
+		"@sanity/image-url": "^2.1.1",
+		"@sveltejs/adapter-vercel": "^7.0.1",
+		"bits-ui": "^2.20.2",
+		"clsx": "^2.1.1",
+		"formsnap": "^2.1.0",
+		"mode-watcher": "^1.1.0",
+		"resend": "^6.34.1",
+		"shiki": "^4.5.0",
+		"sveltekit-superforms": "^3.0.0",
+		"tailwind-merge": "^3.7.0",
+		"zod": "^4.6.7"
+	}
+}

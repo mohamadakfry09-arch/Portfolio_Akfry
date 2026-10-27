@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import type { PortfolioContent, ContactMessage } from '#lib/types.js';
+import staticPortfolioData from '../data/portfolio-content.json' with { type: 'json' };
 import {
 	profileData,
 	socialLinks,
@@ -16,8 +17,15 @@ const DATA_DIR = path.resolve(process.cwd(), 'src/lib/data');
 const CONTENT_FILE = path.join(DATA_DIR, 'portfolio-content.json');
 const MESSAGES_FILE = path.join(DATA_DIR, 'messages.json');
 
+// In-memory fallback cache for serverless environments (e.g. Vercel)
+let inMemoryContent: PortfolioContent | null = null;
+let inMemoryMessages: ContactMessage[] = [];
+
 // Default initial state
 export function getDefaultContent(): PortfolioContent {
+	if (staticPortfolioData && (staticPortfolioData as any).profile) {
+		return staticPortfolioData as unknown as PortfolioContent;
+	}
 	return {
 		profile: profileData,
 		socialLinks,
@@ -32,24 +40,27 @@ export function getDefaultContent(): PortfolioContent {
 
 // Get portfolio content (cached or from JSON file)
 export function getPortfolioContent(): PortfolioContent {
+	if (inMemoryContent) return inMemoryContent;
 	try {
 		if (fs.existsSync(CONTENT_FILE)) {
 			const data = fs.readFileSync(CONTENT_FILE, 'utf-8');
-			return JSON.parse(data);
+			inMemoryContent = JSON.parse(data);
+			return inMemoryContent!;
 		}
 	} catch (err) {
 		console.error('Error reading portfolio-content.json:', err);
 	}
 
-	// If file doesn't exist, initialize it with default data
+	// Fallback to static bundled data or default
 	const initial = getDefaultContent();
+	inMemoryContent = initial;
 	try {
 		if (!fs.existsSync(DATA_DIR)) {
 			fs.mkdirSync(DATA_DIR, { recursive: true });
 		}
 		fs.writeFileSync(CONTENT_FILE, JSON.stringify(initial, null, 2), 'utf-8');
 	} catch (err) {
-		console.error('Error writing initial portfolio-content.json:', err);
+		// Read-only serverless environment
 	}
 
 	return initial;
@@ -57,6 +68,7 @@ export function getPortfolioContent(): PortfolioContent {
 
 // Save portfolio content
 export function savePortfolioContent(updated: PortfolioContent): boolean {
+	inMemoryContent = updated;
 	try {
 		if (!fs.existsSync(DATA_DIR)) {
 			fs.mkdirSync(DATA_DIR, { recursive: true });
@@ -64,8 +76,8 @@ export function savePortfolioContent(updated: PortfolioContent): boolean {
 		fs.writeFileSync(CONTENT_FILE, JSON.stringify(updated, null, 2), 'utf-8');
 		return true;
 	} catch (err) {
-		console.error('Error saving portfolio content:', err);
-		return false;
+		console.warn('Filesystem is read-only (serverless environment). Saved in memory.');
+		return true;
 	}
 }
 
@@ -79,7 +91,7 @@ export function getContactMessages(): ContactMessage[] {
 	} catch (err) {
 		console.error('Error reading messages.json:', err);
 	}
-	return [];
+	return inMemoryMessages;
 }
 
 // Add new contact message
@@ -95,6 +107,7 @@ export function addContactMessage(msg: { name: string; email: string; message: s
 	};
 
 	messages.unshift(newMessage);
+	inMemoryMessages = messages;
 
 	try {
 		if (!fs.existsSync(DATA_DIR)) {
@@ -102,7 +115,7 @@ export function addContactMessage(msg: { name: string; email: string; message: s
 		}
 		fs.writeFileSync(MESSAGES_FILE, JSON.stringify(messages, null, 2), 'utf-8');
 	} catch (err) {
-		console.error('Error writing messages.json:', err);
+		console.warn('Filesystem is read-only (serverless environment). Saved in memory.');
 	}
 
 	return newMessage;
@@ -112,12 +125,13 @@ export function addContactMessage(msg: { name: string; email: string; message: s
 export function deleteContactMessage(id: string): boolean {
 	const messages = getContactMessages();
 	const filtered = messages.filter((m) => m.id !== id);
+	inMemoryMessages = filtered;
 	try {
 		fs.writeFileSync(MESSAGES_FILE, JSON.stringify(filtered, null, 2), 'utf-8');
 		return true;
 	} catch (err) {
-		console.error('Error deleting message:', err);
-		return false;
+		console.warn('Filesystem is read-only. Updated in memory.');
+		return true;
 	}
 }
 
